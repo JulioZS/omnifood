@@ -60,14 +60,56 @@ section {
 
 /* ICONS */
 
-ion-icon {
+/*ion-icon {
     font-size: 250%;
-    display: block;
+    display: inline-block;
     color: #e67e22;
     margin-bottom: 40px;
     margin-top: 25px;
-    
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}*/
+
+.icon-big {
+    font-size: 250%;
+    display: inline-block;
+    color: #e67e22;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+
+    /*secrets to align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* GENERIC LINKS */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
 
 /* BUTTONS */
 
@@ -252,7 +294,7 @@ header {
 /*** HOW IT WORKS ***/
 
 .section-steps {
-    background-color: #f4f4f4;
+    background-color: #d6d6d6de;
 }
 
 .steps-box:first-child {
@@ -291,8 +333,28 @@ header {
     margin-right: 25px;
 }
 
-.btn-app:link {
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
     height: 50px;
     width: auto;
     margin-right: 10px;
 }
+
+/*** CITIES ***/
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
